@@ -17,7 +17,7 @@
 
   /*! FONT SIZE */
   --h1-size: 8rem;
-  --h2-size: 6rem;
+  --h2-size: 5rem;
   --h3-size: 4rem;
   --h4-size: 3rem;
   --h5-size: 2.5rem;
@@ -26,17 +26,27 @@
 
   /*! FONT FAMILY */
   --heading-family: 'Dancing Script';
-  --font-family: 'Inter','sans-serif';
+  --font-family: 'Inter', 'sans-serif';
 }
 
 /* ! ---------------------------------------------------------------- */
 /* * ---------- GLOBAL STYLES ---------- */
+* {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
 }
 
-body{
+body {
   font-family: var(--font-family);
+}
+
+.main-section {
+  max-width: 1500px;
 }
 
 h1,
@@ -47,34 +57,41 @@ h5,
 h6 {
   font-family: var(--heading-family);
   font-weight: var(--heading-fontWeight);
+  letter-spacing: var(--head-letterSpacing);
 }
 
-h1{
+h1 {
   font-size: var(--h1-size);
 }
-h2{
+
+h2 {
+  text-align: center;
+  margin-bottom: 3rem;
   font-size: var(--h2-size);
 }
-h3{
+
+h3 {
   font-size: var(--h3-size);
 }
-h4{
+
+h4 {
   font-size: var(--h4-size);
 }
-h5{
+
+h5 {
   font-size: var(--h5-size);
 }
 
-p{
+p {
   font-size: var(--p-size);
 }
 
-a{
+a {
   font-size: var(--a-size);
   text-decoration: none;
 }
 
-ul{
+ul {
   list-style: none;
 }
 
@@ -82,10 +99,142 @@ ul{
 /* * ---------- COMPONENTS ---------- */
 
 /* ! ---------------------------------------------------------------- */
-/* *? ---------- CLASSES ---------- */
+/* * ---------- SECTIONS ----------  */
+
+/* *? ---------- NAVBAR SECTION ---------- */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.footer-section {
+  margin-top: 15rem;
+  padding: 0rem 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto;
+  row-gap: 2rem;
+  align-items: center;
+}
+
+/* Position headings in the first row */
+.heading-1 {
+  margin-left: -0.5rem;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.heading-2 {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.heading-3 {
+  grid-row: 1;
+  grid-column: 3;
+}
+
+/* Position content in the second row */
+.content-1 {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.content-2 {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.content-3 {
+  grid-row: 2;
+  grid-column: 3;
+}
+
+.footer-section>ul>li {
+  margin: 1rem;
+}
+
+/* Position and span the copyright across the third row */
+#site-copyright {
+  grid-row: 3;
+  grid-column: 1 / -1;
+  /* spans all columns from start to end */
+  text-align: center;
+  font-size: var(--a-size);
+}
+
+/* *TODO ---------- INDEX.html ---------- */
+
+/* *? ---------- HERO SECTION ---------- */
+.hero-section {
+  height: 80vh;
+  display: flex;
+  gap: 1.8rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-section-links {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+/* *? ---------- FEATURE SECTION ---------- */
+.feature-section {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  /* grid-template-rows: repeat(2, 20rem); */
+  column-gap: 5rem;
+  row-gap: 5rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15rem;
+}
+
+.feature-card {
+  max-width: 500px;
+  border: 5px solid;
+  border-radius: 1.5rem;
+  padding: 2rem;
+}
+
+.feature-heading {
+  margin-bottom: 1rem;
+}
+
+/* *? ---------- CTA SECTION ---------- */
+/* *TODO THE LAYOUT OF VIBES WILL BE LIKE PINTREST LAYOUT */
+
+/* *? ---------- CTA SECTION ---------- */
+.cta-card {
+  text-align: center;
+  max-width: 1000px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 5px solid;
+  border-radius: 1.5rem;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 /* ! ---------------------------------------------------------------- */
-/* *TODO ---------- INDEX.html ---------- */
 
 /* ! ---------------------------------------------------------------- */
 /* *TODO ---------- VIBES.html ---------- */
