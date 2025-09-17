@@ -3,54 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>VibeVerse | Vibe</title>
   </head>
+
   <body>
-    <header>
-      <h3><a class="nav-header" href="/">VibeVerse</a></h3>
-      <ul class="nav-links">
-        <li><a href="">About</a></li>
-        <li><a href="vibes.html">Vibes</a></li>
-        <li><a href="login.html">Login</a></li>
-      </ul>
-      <hr />
-    </header>
+    <div class="main-section">
+      <header>
+        <nav class="navbar">
+          <h3>VibeVerse</h3>
+          <ul class="navbar-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="vibes.html">Vibes</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <main>
-      <section class="display-vibes">
+      <main>
+        <div class="vibe-nav">
         <h2>Vibes</h2>
-      </section>
-
-      <section class="add-vibe">
         <a class="btn" href="create-vibe.html">Create Vibe</a>
-        <div class="display-vibe">
-          <h3 id="vibe-title">Vibe-Title</h3>
-          <p id="vibe-content">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi nobis
-            consequuntur quam natus numquam,
-          </p>
-          <span id="vibe-author">Yug</span>
         </div>
-        <div class="display-vibe">
-          <h3 id="vibe-title">Vibe-Title</h3>
-          <p id="vibe-content">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi nobis
-            consequuntur quam natus numquam,
-          </p>
-          <span id="vibe-author">Yug</span>
-        </div>
-        <div class="display-vibe">
-          <h3 id="vibe-title">Vibe-Title</h3>
-          <p id="vibe-content">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi nobis
-            consequuntur quam natus numquam,
-          </p>
-          <span id="vibe-author">Yug</span>
-        </div>
-      </section>
-    </main>
-
+        <section class="vibes-container">
+          <div class="vibe-card">
+            <h4 id="vibe-title">Vibe-Title</h4>
+            <p id="vibe-content">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              nobis consequuntur quam natus numquam,
+            </p>
+            <span id="vibe-author">Yug</span>
+          </div>
+          <div class="vibe-card">
+            <h4 id="vibe-title">Vibe-Title</h4>
+            <p id="vibe-content">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              nobis consequuntur quam natus numquam,
+            </p>
+            <span id="vibe-author">Yug</span>
+          </div>
+          <div class="vibe-card">
+            <h4 id="vibe-title">Vibe-Title</h4>
+            <p id="vibe-content">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi
+              nobis consequuntur quam natus numquam,
+            </p>
+            <span id="vibe-author">Yug</span>
+          </div>
+        </section>
+      </main>
+    </div>
     <footer></footer>
   </body>
 </html>
