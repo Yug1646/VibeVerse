@@ -23,6 +23,7 @@
   --h5-size: 2.5rem;
   --p-size: 1.8rem;
   --a-size: 1.8rem;
+  --small-size: 1.3rem;
 
   /*! FONT FAMILY */
   --heading-family: "Dancing Script";
@@ -45,7 +46,7 @@ html {
   font-size: 62.5%;
 }
 
-body{
+body {
   font-family: var(--text-family);
 }
 
@@ -93,7 +94,7 @@ p {
 /* * ---------- COMPONENTS ---------- */
 
 /* ? ----- BUTTON ----- */
-.btn{
+.btn {
   background-color: var(--black);
   color: var(---white);
   border-radius: 0.5rem;
@@ -172,6 +173,12 @@ p {
   font-family: var(--text-family);
 }
 
+/* ?  */
+.page-heading{
+  text-align: center;
+  margin: 5rem 0rem 3rem;
+}
+
 /* ! ---------------------------------------------------------------- */
 
 /* ! ---------------------------------------------------------------- */
@@ -237,11 +244,16 @@ p {
 }
 /* ! ---------------------------------------------------------------- */
 /* *TODO ---------- VIBES.html ---------- */
-.vibe-nav{
-  margin-top: 5rem;
+.vibe-nav {
+  display: flex;
+  flex-direction: column;
 }
 
-.vibes-container{
+.add-vibe {
+  align-self: flex-end;
+}
+
+.vibes-container {
   max-width: 1500px;
   /* margin: 0 ; */
   height: 30vh;
@@ -252,7 +264,7 @@ p {
   gap: 2rem;
 }
 
-.vibe-card{
+.vibe-card {
   max-width: 300px;
   border: 5px solid;
   border-radius: 1.5rem;
@@ -261,8 +273,30 @@ p {
   flex-direction: column;
   gap: 1rem;
 }
+
+#vibe-author {
+  font-size: var(--small-size);
+}
 /* ! ---------------------------------------------------------------- */
 /* *TODO ---------- CREATE-VIBE.html ---------- */
+.create-vibe-form{
+  height: 35vh;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input,label,textarea{
+  font-size: var(--p-size);
+  padding: 1rem;
+  font-weight: var(--text-fontWeight);
+}
+
+#vibe-content{
+  height: 200px;
+  resize: vertical;
+}
 
 /* ! ---------------------------------------------------------------- */
 /* *TODO ---------- LOGIN.html ---------- */
