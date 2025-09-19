@@ -9,7 +9,7 @@
 
   /*! LINE HEIGHT */
   --text-lineHeight: 1.7;
-  --head-lineHeight: 1.3;
+  --head-lineHeight: 1.2;
 
   /*! LETTER SPACING */
   --head-letterSpacing: -2;
@@ -32,6 +32,8 @@
   /*! COLORS */
   --black: #000;
   ---white: #fff;
+  /* --background-color: #FFF0C4;
+  --heading-color: #8C1007; */
 }
 
 /* ! ---------------------------------------------------------------- */
@@ -48,6 +50,7 @@ html {
 
 body {
   font-family: var(--text-family);
+  background-color: var(--background-color);
 }
 
 h1,
@@ -57,6 +60,8 @@ h4,
 h5 {
   font-family: var(--heading-family);
   font-weight: var(--heading-fontWeight);
+  color: var(--heading-color);
+  line-height: var(--head-lineHeight);
 }
 
 h1 {
@@ -321,5 +326,31 @@ textarea {
 
 /* ! ---------------------------------------------------------------- */
 /* *TODO ---------- LOGIN.html ---------- */
+.login-form {
+  max-width: 400px;
+  margin: 0 auto;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+}
 
+.login-form > h2 {
+  text-align: center;
+}
+
+/* Add this new CSS */
+.label-container {
+  display: flex;
+  align-items: center; /* Vertically aligns the icon and text */
+  gap: 0.5rem; /* Adds a small space between the icon and the label */
+}
+
+/* Optional: Group the label/input pairs for better spacing */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Space between the label and the input field */
+}
 /* ! ---------------------------------------------------------------- */
